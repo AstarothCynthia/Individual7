@@ -1,0 +1,70 @@
+.main {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:    "nav        nav         nav         nav"
+                            "galery     galery      galery      sidebar1"
+                            "galery     galery      galery      sidebar2"
+                            "galery     galery      galery      sidebar3"
+                            "us         us          us          us"
+                            "news       news        news        news"
+                            "contact    contact     contact     contact"
+                            "footer     footer      footer      footer";
+}
+
+.main .nav {
+    grid-area: nav;
+}
+
+.main .galery {
+    grid-area: galery;
+}
+
+.main .sidebar1 {
+    grid-area: sidebar1;
+}
+
+.main .sidebar2 {
+    grid-area: sidebar2;
+}
+
+.main .sidebar3 {
+    grid-area: sidebar3;
+}
+
+.main .us {
+    grid-area: us;
+    background-color: rgb(237, 137, 20);
+    padding: 40px;
+}
+
+.main .news {
+    grid-area: news;
+}
+
+.main .contact {
+    grid-area: contact;
+    background-color: gray;
+    padding: 40px;
+}
+
+.main .footer {
+    grid-area: footer;
+    padding-top: 40px;
+    background-color: rgb(53, 60, 68);
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+	.main {
+        gap: 20px;
+		grid-template-areas:    "nav        nav         nav         nav"
+                                "galery     galery      galery      galery"
+                                "sidebar1   sidebar1    sidebar1    sidebar1"
+                                "sidebar2   sidebar2    sidebar2    sidebar2"
+                                "sidebar3   sidebar3    sidebar3    sidebar3"
+                                "us         us          us          us"
+                                "news       news        news        news"
+                                "contact    contact     contact     contact"
+                                "footer     footer      footer      footer";
+	}
+}
